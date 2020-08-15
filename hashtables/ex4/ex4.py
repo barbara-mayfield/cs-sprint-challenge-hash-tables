@@ -2,7 +2,14 @@ def has_negatives(a):
     """
     YOUR CODE HERE
     """
-    # Your code here
+    ht = {}
+    result = []
+
+    for x in a:
+        if x != 0:
+            ht[x] = 1
+            if -x in ht:
+                result.append(abs(x))  # abs returns absolute value of a num
 
     return result
 
